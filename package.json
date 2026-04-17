@@ -1,0 +1,39 @@
+{
+  "name": "opencode-cli-proxy",
+  "version": "0.1.0",
+  "description": "Turn your local opencode CLI into an OpenAI-compatible API with a one-command npm launcher.",
+  "license": "UNLICENSED",
+  "bin": {
+    "opencode-proxy": "bin/opencode-proxy.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "scripts",
+    "README.md"
+  ],
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.js",
+    "release:dist": "node ./scripts/release.js",
+    "pack:npm": "npm pack",
+    "preflight": "node ./scripts/preflight.js"
+  },
+  "keywords": [
+    "opencode",
+    "openai",
+    "proxy",
+    "cli",
+    "npm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mifhud/opencode-cli-proxy.git"
+  },
+  "homepage": "https://github.com/mifhud/opencode-cli-proxy#readme",
+  "bugs": {
+    "url": "https://github.com/mifhud/opencode-cli-proxy/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+
+# Build outputs
+server
+desktop
+opencode-desktop
+*.exe
+*.dll
+*.so
+*.dylib
+*.app
+
+# Test artifacts
+*.test
+*.out
+coverage.out
+
+# IDE
+.idea/
+.vscode/
+
+# Local env
+.env
+.env.*
+
+# Machine-specific config (may contain API keys)
+configs/config.local.yaml
+
+# Node / npm
+node_modules/
+*.tgz
+npm-debug.log*
+
+# Release artifacts
+dist/
